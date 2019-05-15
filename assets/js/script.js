@@ -1,5 +1,16 @@
 const toggleSwitch = document.querySelector('.toggleWrapper input[type="checkbox"]');
 
+// Mock localStorage when it is not allowed
+let localStorage;
+try {
+  localStorage = window.localStorage;
+} catch (error) {
+  localStorage = {
+    getItem: key => undefined,
+    setItem: () => {}
+  };
+}
+
 const currentTheme = localStorage.getItem('theme');
 
 if (currentTheme) {
