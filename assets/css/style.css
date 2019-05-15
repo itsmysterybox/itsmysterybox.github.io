@@ -17,6 +17,7 @@
     --sub-heading-color: #17191A;
     --link-color: #171717;
     --icon-color: #666;
+    --ul-border-color: #2856b6;
 }
 
 [data-theme="dark"] {
@@ -26,6 +27,8 @@
     --sub-heading-color: #cfd8dc;
     --link-color: #cfceee;
     --icon-color: #fafafa;
+    --ul-border-color: #ffe838;
+    --fav-links-color: #fff;
 }
 
 .clearfix::after {
@@ -145,7 +148,7 @@ a:hover {
 	list-style: none;
 	margin-top: 30px;
 	line-height: 30px;
-	border-left: 3px solid #ffe838;
+	border-left: 3px solid var(--ul-border-color);
 	/* border-radius: .8rem; */
 	padding-left: 5px;
 }
@@ -213,6 +216,7 @@ a:hover {
 
 .text-list li {
     margin: 0 0 20px;
+    color: var(--fav-links-color);
 }
 
 .text-list-title {
@@ -244,23 +248,40 @@ a:hover {
 	margin-right: 40px;
 }
 
+.footer-links {
+	margin-top: 10px;
+}
+
 /* -------- Scroll to top -------- */
 
 .gototop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  opacity: 0;
-  font-size: 40px;
-  visibility: hidden;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	font-size: 40px;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 }
 .gototop.active {
-  opacity: 1;
-  visibility: visible;
+	opacity: 1;
+	visibility: visible;
+}
+
+/* -------- Javascript disabled -------- */
+#js-warning p {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+    background: #ffff00;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:bold;
+    padding:0.8em;
 }
 
 /* -------- CHANGE THEME -------- */
