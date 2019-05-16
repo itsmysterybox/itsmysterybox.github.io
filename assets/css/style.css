@@ -41,7 +41,6 @@ html {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 100;
 }
-
 body {
 	width: 60%;
 	margin: auto;
@@ -61,17 +60,10 @@ h1 {
 	font-weight: 800;
 	color: var(--heading-color);
 }
-
 h2 {
 	font-size: 35px;
 	font-weight: 400;
 	color: var(--sub-heading-color);
-}
-
-h5 {
-	font-size: 20px;
-	margin-top: 10px;
-	color: #17191A;
 }
 
 p {
@@ -90,7 +82,6 @@ a {
 	color: var(--link-color);
 	text-decoration: none;
 }
-
 a:hover {
 	color: #09f;
 }
@@ -481,7 +472,11 @@ input:checked + .toggle .star--6 {
 /* -------- MEDIA QUERIES -------- */
 @media screen and (max-width: 400px) {
 	body { width: 90% }
-    .landing-right img { width: 150px; margin-top: 1em; padding-left: 10px; }
+    .landing-right img {
+    	width: 150px;
+    	margin-top: 1em;
+    	padding-left: 10px;
+    }
     h1 { font-size: 20px; }
     h2 { font-size: 15px; }
     p { font-size: 15px; }
@@ -510,14 +505,16 @@ input:checked + .toggle .star--6 {
     	display: table-cell;
     	text-align: center;
     }
-    .contact-me, .nav-icons {
-    	flex: 0;
-	}
+    .contact-me, .nav-icons { flex: 0; }
 	.toggleWrapper { margin-left: 0; }
 }
 
 @media screen and (min-width: 401px) and (max-width: 720px) {
-    .landing-right img { width: 200px; margin-top: 2em; padding-left: 10px; }
+    .landing-right img {
+    	width: 200px;
+    	margin-top: 2em;
+    	padding-left: 10px;
+    }
     h1 { font-size: 20px; }
     h2 { font-size: 20px; }
     p { font-size: 15px; }
@@ -528,17 +525,15 @@ input:checked + .toggle .star--6 {
 }
 
 @media screen and (min-width: 721px) and (max-width: 1280px) {
-    /* .landing { height: initial;	} */
-    .landing-right img { width: 200px; margin-top: 2em; }
-    .scroll { bottom: 240px; }
-    /* .skills { margin-top: 10em;	} */
-
+    .landing-right img {
+    	width: 200px;
+    	margin-top: 2em;
+    }
+    .scroll { bottom: 210px; }
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1440px) {
-    .landing { height: initial;	}
-    .scroll { bottom: 0px; }
-    .skills { margin-top: 10em;	}
+    .scroll { bottom: 210px; }
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
