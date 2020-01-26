@@ -1,8 +1,5 @@
 # itsmysterybox.github.io
-My graphical web portfolio.
-
-## Demo
-Here is the [demo](https://itsmysterybox.github.io/).
+Repo for my [web portfolio](https://itsmysterybox.github.io/).
 
 ---
 
