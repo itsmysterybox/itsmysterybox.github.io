@@ -1,7 +1,8 @@
-# itsmysterybox.github.io
-Repo for my [web portfolio](https://itsmysterybox.github.io/).
+# Web Portfolio
+
+See my web portfolio [here](https://itsmysterybox.github.io/).
 
 ---
 
-Also see my [cli portfolio](https://github.com/itsmysterybox/cli-portfolio/).
+Here's the repo for my [cli portfolio](https://github.com/itsmysterybox/cli-portfolio/).
 
