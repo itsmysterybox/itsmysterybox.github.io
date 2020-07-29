@@ -49,13 +49,11 @@ $(function() {
 });
 
 var goToTop = function() {
-	// $('.js-gotop').on('click', function() {
-	// 	// event.preventDefault();
-	// 	$('html, body').animate({
-	// 		scrollTop: $('html').offset().top
-	// 	}, 1000, 'easeInOutExpo');
-	// 	return false;
-	// });
+	$('.js-gotop').click(function() {
+		$('html, body').animate({
+			scrollTop: $('body').offset().top
+		}, 1000);
+	});
 
 	$(window).scroll(function() {
 		var $win = $(window);
